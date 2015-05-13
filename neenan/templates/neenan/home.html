@@ -13,7 +13,7 @@
         <script type="text/javascript" src="{% static 'neenan/composers.js' %}"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container"ng-app="neenan" >
             <div class="column navbar">
                 <h1>Neenan</h1>
                 <h2>Media Views</h2>          
@@ -27,9 +27,10 @@
                     <li>No playlists</li>
                 </ul>
             </div>
-            <div class="column browser">
-                Browser view!
-            
+            <div class="column browser" ng-controller="composers">
+                {% verbatim %}
+                {{ testvar }}
+                {% endverbatim %}
             </div>
             <div class="column listview">
                 List view/queue!
