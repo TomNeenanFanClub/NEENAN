@@ -1,0 +1,31 @@
+.container {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:0px;
+}
+
+.container div {
+    display: table-cell;
+    white-space:normal;
+    height:100%;
+    vertical-align:top;
+    padding:8px 8px;
+    font-size:17px;  
+    border-right:2px solid black;
+}
+
+.container div:last-child {
+    border-right:none;
+}
+
+/**** navbar stuff ****/
+
+
+
+
+/**** list view  ****/

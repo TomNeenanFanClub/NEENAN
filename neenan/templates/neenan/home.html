@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'neenan/style.css' %}" />
+        <title>Neenan</title>
+        
+        <script type="text/javascript" src="{% static 'neenan/angular.js' %}"></script> 
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="{% static 'neenan/columns.js' %}"></script>
+        <script type="text/javascript" src="{% static 'neenan/navbar.js' %}"></script>
+        <script type="text/javascript" src="{% static 'neenan/listviews.js' %}"></script>
+        <script type="text/javascript" src="{% static 'neenan/composers.js' %}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <h1>Neenan!</h1>
+            </div>
+            <div class="browser">
+                Browser view!
+            
+            </div>
+            <div class="listview">
+                List view/queue!
+            </div>
+        </div>
+    </body>
+</html>
