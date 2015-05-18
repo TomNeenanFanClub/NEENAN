@@ -7,18 +7,17 @@
         
         <script type="text/javascript" src="{% static 'neenan/angular.js' %}"></script> 
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="{% static 'neenan/columns.js' %}"></script>
         <script type="text/javascript" src="{% static 'neenan/navbar.js' %}"></script>
         <script type="text/javascript" src="{% static 'neenan/listviews.js' %}"></script>
         <script type="text/javascript" src="{% static 'neenan/composers.js' %}"></script>
     </head>
     <body>
-        <div class="container"ng-app="neenan" >
+        <div class="container" ng-app="neenan" >
             <div class="column navbar">
-                <h1>Neenan</h1>
+                <h1 class="myclass">Neenan</h1>
                 <h2>Media Views</h2>          
                 <ul>
-                    <li>Composers</li>
+                    <li class="myclass">Composers</li>
                     <li>Albums</li>
                     <li>Artists</li>
                 </ul>
@@ -28,6 +27,9 @@
                 </ul>
             </div>
             <div class="column browser" ng-controller="composers">
+                <div class="testbox">
+                    <div >Hello world!</div>
+                </div>
                 {% verbatim %}
                 {{ testvar }}
                 {% endverbatim %}
