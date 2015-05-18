@@ -1,8 +1,8 @@
 body {
     background-color:white;
     color:black;
-    font-family: sans;
 
+    font-family: sans;
 }
 
 .container {
@@ -39,39 +39,49 @@ body {
     border-bottom:1px solid #CCC  ;
     padding:5px;
 
-
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffffff 0%, #7fffbb 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#7fffbb)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#7fffbb 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ffffff 0%,#7fffbb 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ffffff 0%,#7fffbb 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ffffff 0%,#7fffbb 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7fffbb',GradientType=0 ); /* IE6-9 */
-}
-
-
-ul .myclass {
-    color:blue;
-
+        
+    background: #f4fff9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f4fff9 0%, #c4ffdf 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4fff9), color-stop(100%,#c4ffdf)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f4fff9 0%,#c4ffdf 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f4fff9 0%,#c4ffdf 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f4fff9 0%,#c4ffdf 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f4fff9 0%,#c4ffdf 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4fff9', endColorstr='#c4ffdf',GradientType=0 ); /* IE6-9 */
 }
 
 /**** navbar stuff ****/
-
-
 .navbar {
     width:12em;
-    
+    box-shadow:0px 0px 5px #CCC;
+    background:#f4fff9;
+    -webkit-user-select:none;
+    cursor:default;
 }
 
 
 .navbar h2 {
     font-variant:small-caps;
     margin-bottom:0px;
+    font-size:17px;
+    font-weight:normal;
 }
 
-.navbar ul {
-    margin-top:0px;
+.navbar p {
+    margin:0px;
+    padding:1px;
+    padding-left:10px;
+    cursor:pointer;
+}
+
+.navbar p.selected {
+    font-size:16px;
+    background:#c4ffdf;
+
+    margin:0px -8px 0px -8px;
+    border:#CCC solid;
+    border-width:1px 0px;
+
 }
 
 
@@ -88,7 +98,7 @@ ul .myclass {
 	margin: 5px 0px 0px 0px;
 	padding: 5px 0px 0px 5px;
 	width: 100%;
-	height: 100%
+	height: 100%;
 	display: block;
 	text-align: left;
 	border: 1px solid #CCC;
